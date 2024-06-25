@@ -96,8 +96,8 @@ function MensagemList(props) {
             <tr key={index}>
               <td>{mensagem.id}</td>
               <td>{mensagem.nome}</td>
-              <td>{mensagem.assunto.slice(0, 10)}{mensagem.assunto.length > 10 ? '...' : ''}</td>              <td>{mensagem.criadoEm}</td>
-              <td>{mensagem.mensagem.slice(0, 10)}{mensagem.mensagem.length > 10 ? '...' : ''}</td>              <td>{mensagem.criadoEm}</td>
+              <td>{mensagem.assunto.slice(0, 10)}{mensagem.assunto.length > 10 ? '...' : ''}</td>           
+              <td>{mensagem.mensagem.slice(0, 10)}{mensagem.mensagem.length > 10 ? '...' : ''}</td>            
               <td>{mensagem.telefone}</td>
               <td>{mensagem.statusMensagem}</td>
               <td>{mensagem.criadoEm}</td>

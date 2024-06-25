@@ -41,8 +41,9 @@ function HistoricoList(props) {
       apiBiblioteca.get(`/historicos`)
         .then((response) => {
           const data = response.data;
+          data.sort((a, b) => a.id - b.id);
           setHistorico(data);
-          setFilteredHistoricos(data);
+          setFilteredHistoricos(data.reverse());
         })
         .catch((error) => console.error(error));
     }

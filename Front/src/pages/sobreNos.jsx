@@ -1,9 +1,9 @@
 import React from 'react';
-import style from '../pages/App.module.css'; 
-import { FaGraduationCap, FaBook, FaUserTie, FaInstagram, FaFacebook } from 'react-icons/fa';
+import style from '../pages/sobreNos.module.css'; 
+import { FaGraduationCap, FaBook, FaUserTie, FaInstagram } from 'react-icons/fa';
 import NavLinks from '../components/NavLinks';
 
-function App() {
+function SobreNos() {
   return (
     <div>
     <div className={style.body}>
@@ -116,4 +116,4 @@ function App() {
   );
 }
 
-export default App;
+export default SobreNos;

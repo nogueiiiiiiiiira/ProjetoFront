@@ -16,7 +16,7 @@ import Loans from "./pages/loans";
 import Fines from "./pages/fines";
 import Login from "./pages/login"; 
 import PrimeiroAcesso from "./pages/primeiroAcesso";
-import App from "./pages/sobreNos";
+import SobreNos from "./pages/sobreNos";
 import HomePage from "./pages/homePage";
 import Contact from "./pages/contact";
 import Mensagens from "./pages/verMensagens.jsx";
@@ -33,7 +33,7 @@ const router = createBrowserRouter([
   { path: "/Fines", element: <Fines />},
   { path: "/Login", element: <Login />},
   { path: "/PrimeiroAcesso", element: <PrimeiroAcesso />},
-  { path: "/SobreNos", element: <App />},
+  { path: "/SobreNos", element: <SobreNos />},
   { path: "/", element: <HomePage />},
   { path: "/contatos", element: <Contact />},
   { path: "/mensagens", element: <Mensagens />},
