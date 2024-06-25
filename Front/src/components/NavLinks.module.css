@@ -1,0 +1,42 @@
+nav {
+    position: relative;
+    z-index: 1; 
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: auto;
+  }
+  
+  .navLinks {
+    text-align: right;
+  }
+  
+  .navLinks ul {
+    list-style: none;
+  }
+  
+  .navLinks ul li {
+    display: inline-block;
+    padding: 8px 12px;
+  }
+  
+  .navLinks ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  
+  .navLinks ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #007BFF;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  
+  .navLinks ul li:hover::after{
+    width: 100%;
+  }

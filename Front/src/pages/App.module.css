@@ -1,0 +1,139 @@
+.body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    flex-direction: column; 
+    position: relative;
+}
+
+.body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/biblio.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: blur(8px) contrast(0.5) brightness(0.5); 
+  z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20vh;
+    gap: 20px; 
+  }
+  
+  .card {
+    background-image: linear-gradient(to bottom, #ffffff 0%, #aaaaaa 100%);
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px; 
+    height: 40vh;
+    transition: 0.2s;
+  }
+
+  .card:hover{
+    transform: scale(1.05);
+  }
+
+  
+  .cardIcon {
+    font-size: 3em;
+    color: #007BFF; 
+    margin-bottom: 15px;
+  }
+  
+  .cardTitle {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .cardText {
+    color: #666;
+    line-height: 1.6;
+  }
+
+  .h1{
+    color: white;
+    display: flex;
+    margin-bottom: 5vh;
+  }
+
+.p{
+  width: 20vw;
+  flex-wrap: wrap;
+  color: white;
+  text-align: center;
+  font-size: 2.5vh;
+  
+}
+
+nav {
+  position: relative;
+  z-index: 1; 
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: auto;
+}
+
+.navLinks {
+  text-align: right;
+}
+
+.navLinks ul {
+  list-style: none;
+}
+
+.navLinks ul li {
+  display: inline-block;
+  padding: 8px 12px;
+}
+
+.navLinks ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.navLinks ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: #007BFF;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.navLinks ul li:hover::after{
+  width: 100%;
+}
+
+.roundedImage {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.roundedImage:hover{
+  transform: scale(1.2);
+}
