@@ -45,7 +45,7 @@ function ReaderList(props) {
             return (
               reader.nome.toLowerCase().includes(searchTerm.toLowerCase()) ||
               reader.cpf.includes(searchTerm) ||
-              reader.email.includes(searchTerm) ||
+              reader.email.toLowerCase().includes(searchTerm.toLowerCase()) ||
               reader.telefone.includes(searchTerm) ||
               reader.id === parseInt(searchTerm)
             );

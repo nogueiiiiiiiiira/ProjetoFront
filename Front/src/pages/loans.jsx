@@ -188,7 +188,11 @@ function LoanForm(props) {
           throw new Error('O leitor não tem idade suficiente para emprestar este livro!');
         }
 
+        alert('Empréstimo realizado com sucesso!');
+        window.location.reload();
         return apiBiblioteca.post(`/loans`, loan);
+
+
       })
       .then((response) => {
         setErrorMessage(null);
@@ -196,8 +200,7 @@ function LoanForm(props) {
           cpf: "",
           idLivro: "",
         });
-        alert('Empréstimo realizado com sucesso!');
-        props.showList(); 
+
       })
       .catch((error) => {
         if (error.response && error.response.status === 400) {

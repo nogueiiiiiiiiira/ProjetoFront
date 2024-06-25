@@ -26,13 +26,15 @@ const ContactForm = () => {
         mensagem,
         telefone,
       });
-      alert('Mensagem enviada com sucesso!');
       setError(null);
       clearForm(); 
     } catch (error) {
       setError(error.response.data.message); 
       setSuccess(null);
     }
+
+    alert('Mensagem enviada com sucesso!');
+
   };
 
   const clearForm = () => {

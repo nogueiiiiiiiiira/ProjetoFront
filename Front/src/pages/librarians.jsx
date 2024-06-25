@@ -45,7 +45,7 @@ function LibrarianList(props) {
             return (
               librarian.nome.toLowerCase().includes(searchTerm.toLowerCase()) ||
               librarian.cpf.includes(searchTerm) ||
-              librarian.email.includes(searchTerm) ||
+              librarian.email.toLowerCase().includes(searchTerm.toLowerCase()) ||
               librarian.telefone.includes(searchTerm) ||
               librarian.id === parseInt(searchTerm)
             );

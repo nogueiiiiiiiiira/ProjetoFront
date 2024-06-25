@@ -77,7 +77,7 @@ function SobreNos() {
             "A leitura é a chave para a liberdade e o crescimento pessoal."
           </p>
           <div className={style.socialMedia}>
-            <a href="https://www.instagram.com/guilherme.araujo/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/gui.araujo07/" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={24} />
             </a>
           </div>
@@ -105,7 +105,7 @@ function SobreNos() {
             "A leitura é a minha paixão e a minha fonte de conhecimento."
           </p>
           <div className={style.socialMedia}>
-            <a href="https://www.instagram.com/pablo/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/pg_verissimo/" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={24} />
             </a>
           </div>

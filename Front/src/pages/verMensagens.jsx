@@ -43,8 +43,8 @@ function MensagemList(props) {
           data = data.filter((reader) => {
             return (
               reader.nome.toLowerCase().includes(searchTerm.toLowerCase()) ||
-              reader.assunto.includes(searchTerm) ||
-              reader.mensagem.includes(searchTerm) ||
+              reader.assunto.toLowerCase().includes(searchTerm.toLowerCase()) ||
+              reader.mensagem.toLowerCase().includes(searchTerm.toLowerCase()) ||
               reader.telefone.includes(searchTerm) ||
               reader.id === parseInt(searchTerm)
             );
